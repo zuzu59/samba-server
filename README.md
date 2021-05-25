@@ -1,8 +1,19 @@
 # samba-server
 Petit container docker avec un samba server pour faire des tests SMB
-zf210525.1354
+
+zf210525.1520
 
 ## Utilisation
+### Gestion des secrets
+Il faut copier **secrets.sh.example** dans **secrets.sh**, puis le modifier en conséquence
+
+Puis charger les *secrets* en faisant:
+```
+chmod +x secrets.sh
+./secrets.sh
+```
+
+
 ### Pour démarrer
 ```
 ./start.sh

@@ -1,4 +1,4 @@
-#zf210525.1403
+#zf210525.1516
 #source: https://hub.docker.com/r/dperson/samba
 
 version: '3.3'
@@ -18,5 +18,5 @@ services:
         # privileged: true
         command:
             -p
-            -u "toto;tototutu."
-            -s "toto2;/share;no;no;no;toto"
+            -u "$samba_user;$samba_pass"
+            -s "$samba_share;/share;no;no;no;toto"
